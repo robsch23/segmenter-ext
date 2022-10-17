@@ -3,6 +3,7 @@ titleColor { color: #339933 }
 approchColorOne { color: #ff0066 }
 approchColorTwo { color: #ff6600 }
 </style>
+
 ## <titleColor>SEGMENTER-EXT</titleColor>
 
 #### The segmenter is an extension for <a href="https://loko-ai.com/" target="_blank">LoKo-AI</a>

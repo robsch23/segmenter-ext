@@ -1,30 +1,42 @@
-<style>
-titleColor { color: #339933 }
-approchColorOne { color: #ff0066 }
-approchColorTwo { color: #ff6600 }
-</style>
-
-## <titleColor>SEGMENTER-EXT</titleColor>
+## SEGMENTER-EXT
 
 #### The segmenter is an extension for <a href="https://loko-ai.com/" target="_blank">LoKo-AI</a>
 
 ---
-**Abstract**
+**_Abstract_**
 
 <p>
-La segmentazione è la tecnica che durante l'elaborazione e l'analisi delle immagini digitali permette di suddividere un'immagine in parti o regioni, spesso in base alle caratteristiche dei pixel.
+Segmentation is the technique used to process and analyze digital images and 
+allows you to divide an image into parts or regions, often based on the 
+characteristics of the pixels.
 
-Ci sono diversi approcci alla segmentazione:
-* Con riferimento ai pixel si parla di segmentazione semantica: gli oggetti classificati con gli stessi valori di pixel vengono segmentati con le stesse mappe di colori.
-* Andare alla ricerca di pattern nei pixel che compongono un'immagine
-* ed altro...
+There are several approaches to segmentation:
+* With reference to pixels we speak of semantic segmentation: objects 
+classified with the same pixel values are segmented with the same color maps
+
+* Search for patterns in the pixels that make up an image
+
+* and more ...
 </p>
 
 ---
-**Description**
+**_Description_**
 
-La componente Segmenter, in particolare, si sviluppa su due diversi generi di segmentazione, che sono:
+The **Segmenter** component, in particular, is developed on two different 
+kinds of segmentation, which are:
 
-1. ### <approchColorOne>SEGMENT</approchColorOne>
+1. ### SEGMENT
 
-2. ### <approchColorTwo>SEARCH BOX<approchColorTwo>
+This type of segmentation allows, for example, to segment documents in which it is 
+not possible to find a clear pattern, so by choosing some parameters of the computer
+vision Segment algorithm it is possible to obtain blocks from the document parse.
+
+2. ### SEARCH BOX
+
+<p>Computer vision's SearchBox algorithm is useful for searching for recurring patterns
+in the picture, such as:</p>
+
+1. [ ] Checkbox
+2. [ ] Box
+3. [ ] Form
+

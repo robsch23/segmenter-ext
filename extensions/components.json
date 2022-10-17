@@ -1,0 +1,139 @@
+[
+ {
+  "name": "Segmenter",
+  "description": "",
+  "configured": true,
+  "inputs": [
+   {
+    "id": "Segment",
+    "label": "Segment",
+    "service": "loko/segmenter/segment",
+    "to": "Segment"
+   },
+   {
+    "id": "Search Box",
+    "label": "Search Box",
+    "service": "loko/segmenter/search_box",
+    "to": "Search Box"
+   }
+  ],
+  "outputs": [
+   {
+    "id": "Segment",
+    "label": "Segment"
+   },
+   {
+    "id": "Search Box",
+    "label": "Search Box"
+   }
+  ],
+  "options": {
+   "group": "Custom",
+   "icon": "RiTyphoonFill",
+   "click": null,
+   "values": {
+    "dpi": 200,
+    "range_kernel_size": "5,5",
+    "dilate_iteration": 10,
+    "range_blocks_height": "0,0",
+    "range_blocks_width": "0,0",
+    "range_blocks_area": "0,0",
+    "range_box_width": "0,0",
+    "range_box_height": "0,0",
+    "range_box_area": "0,0"
+   },
+   "args": [
+    {
+     "name": "save_images",
+     "type": "boolean",
+     "label": "Save Images",
+     "helper": "",
+     "group": "",
+     "value": null,
+     "description": ""
+    },
+    {
+     "name": "dpi",
+     "type": "number",
+     "label": "DPI",
+     "helper": "Set dpi level --- Recommended range: 150-200",
+     "group": "Segment",
+     "value": 200,
+     "description": "Set DPI level to decide on what level of scale to make the segmenter work --- Recommended range: 150-200"
+    },
+    {
+     "name": "range_kernel_size",
+     "type": "text",
+     "label": "Kernel Size Dilation",
+     "helper": "Set tuple of kernel for logic of dilation (only odd numbers).  Example: 5,5 or 7,5 or 9,7...",
+     "group": "Segment",
+     "value": "5,5",
+     "description": "The expansion width is set with the first element of the tuple. With the second element you set the height of the expansion"
+    },
+    {
+     "name": "dilate_iteration",
+     "type": "number",
+     "label": "Dilate iteration",
+     "helper": "Set number of iteration for dilate content in document",
+     "group": "Segment",
+     "value": 10,
+     "description": "Set number of iteration for dilate content in document"
+    },
+    {
+     "name": "range_blocks_height",
+     "type": "text",
+     "label": "Range of block height sizes",
+     "helper": "Sets the minimum and maximum height of the blocks that must be returned in output (set 0 for any measurement)",
+     "group": "Segment",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum height of the blocks that must be returned in output"
+    },
+    {
+     "name": "range_blocks_width",
+     "type": "text",
+     "label": "Range of block width sizes",
+     "helper": "Sets the minimum and maximum width of the blocks that must be returned in output (set 0 for any measurement)",
+     "group": "Segment",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum width of the blocks that must be returned in output"
+    },
+    {
+     "name": "range_blocks_area",
+     "type": "text",
+     "label": "Range of block area sizes",
+     "helper": "Sets the minimum and maximum area of the blocks that must be returned in output (set 0 for any measurement)",
+     "group": "Segment",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum area of the blocks that must be returned in output"
+    },
+    {
+     "name": "range_box_width",
+     "type": "text",
+     "label": "Range of boxes width sizes",
+     "helper": "Sets the minimum and maximum width of the boxes that must be returned in output (set 0 for any measurement)",
+     "group": "Search Box",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum width of the boxes that must be returned in output"
+    },
+    {
+     "name": "range_box_height",
+     "type": "text",
+     "label": "Range of boxes height sizes",
+     "helper": "Sets the minimum and maximum height of the boxes that must be returned in output (set 0 for any measurement)",
+     "group": "Search Box",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum height of the boxes that must be returned in output"
+    },
+    {
+     "name": "range_box_area",
+     "type": "text",
+     "label": "Range of boxes area sizes",
+     "helper": "Sets the minimum and maximum area of the boxes that must be returned in output (set 0 for any measurement)",
+     "group": "Search Box",
+     "value": "0,0",
+     "description": "Sets the minimum and maximum area of the boxes that must be returned in output"
+    }
+   ]
+  }
+ }
+]

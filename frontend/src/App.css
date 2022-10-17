@@ -1,0 +1,113 @@
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline;
+  font-family: BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 10px;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  margin: 15px;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+}
+
+button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.button-delete {
+    background-color: white;
+    background-image: url('./assets/trash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 95%;
+    height: 50px;
+    width: 80px;
+    display: inline;
+    color: #f2f2f2f;
+    margin: 20px;
+}
+
+.button-delete:hover {
+    background-color: white;
+    background-image: url('./assets/trash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 105%;
+}
+
+.button-delete:active {
+    background-color: white;
+    background-image: url('./assets/trash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+}
+
+.container-btn-segment {
+    display: inline-block;
+    padding: 1px;
+    border: 1px solid #e6005c;
+    color: #e6005c;
+    font-weight: 700;
+    width: 600px;
+    margin: 5px;
+}
+
+.result-btn-segment:hover {
+    background-color: #ffb3d1;
+}
+
+.container-btn-searchBox {
+    display: inline-block;
+    padding: 1px;
+    border: 1px solid #e68a00;
+    color: #e68a00;
+    font-weight: 700;
+    justify-content: center;
+    width: 600px;
+    margin: 5px;
+}
+
+.result-btn-searchBox:hover {
+    background-color: #ffe0b3;
+}

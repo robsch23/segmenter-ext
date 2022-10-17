@@ -1,0 +1,437 @@
+{
+  "name": "segmenter-ext",
+  "id": "segmenter-ext",
+  "description": "",
+  "created_on": "13/09/2022, 10:51:21",
+  "last_modify": "14/10/2022, 11:14:40",
+  "graphs": {
+    "main": {
+      "nodes": [
+        {
+          "id": "ee7acc40-faf0-48fb-b1ce-008c9692a7fd",
+          "position": {
+            "x": 473.5150108208703,
+            "y": 152.4135861176877
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 156,
+          "height": 88,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "File Reader",
+            "events": null,
+            "description": "### Description\nThe FILE READER component allows the reading of individual files.\n\n### Output\nSetting the **Read Content** parameter to **False**, the output provides the file path in PosixPath format. The component will then need to be connected to other components to read the content, for example *LineReader*.\n\nOn the contrary, setting the **Read Content** parameter to **True**, you can choose whether to read the content in *Binary* format. This format will be selected for reading non-text files.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Inputs",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "value",
+                  "type": "files",
+                  "label": "File",
+                  "fragment": "files",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "read_content",
+                  "type": "boolean",
+                  "label": "Read content"
+                },
+                {
+                  "name": "binary",
+                  "type": "dynamic",
+                  "label": "Binary",
+                  "dynamicType": {
+                    "true": "boolean"
+                  },
+                  "parent": "read_content"
+                }
+              ],
+              "click": "Send file",
+              "icon": "RiFileList3Fill",
+              "values": {
+                "comment": "",
+                "alias": "Input Segment",
+                "debug": false,
+                "read_content": false,
+                "value": {
+                  "name": "CV Matteo Leoncini.pdf",
+                  "path": "data/data/CV Matteo Leoncini.pdf",
+                  "parent": "data/data",
+                  "isDir": false,
+                  "hidden": false
+                }
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 473.5150108208703,
+            "y": 152.4135861176877
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "de5224d2-e822-48c7-9ed1-d5d0d1c9978c",
+          "position": {
+            "x": 462.9880084465351,
+            "y": 296.4351210872846
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 214,
+          "height": 104,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "File Reader",
+            "events": null,
+            "description": "### Description\nThe FILE READER component allows the reading of individual files.\n\n### Output\nSetting the **Read Content** parameter to **False**, the output provides the file path in PosixPath format. The component will then need to be connected to other components to read the content, for example *LineReader*.\n\nOn the contrary, setting the **Read Content** parameter to **True**, you can choose whether to read the content in *Binary* format. This format will be selected for reading non-text files.",
+            "inputs": [
+              {
+                "id": "input",
+                "label": "input"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "output",
+                "label": "output"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": "Inputs",
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "value",
+                  "type": "files",
+                  "label": "File",
+                  "fragment": "files",
+                  "validation": {
+                    "required": "Required field"
+                  }
+                },
+                {
+                  "name": "read_content",
+                  "type": "boolean",
+                  "label": "Read content"
+                },
+                {
+                  "name": "binary",
+                  "type": "dynamic",
+                  "label": "Binary",
+                  "dynamicType": {
+                    "true": "boolean"
+                  },
+                  "parent": "read_content"
+                }
+              ],
+              "click": "Send file",
+              "icon": "RiFileList3Fill",
+              "values": {
+                "comment": "",
+                "alias": "Input SearchBox",
+                "debug": false,
+                "read_content": false,
+                "value": {
+                  "name": "doc_Crismani_Ita_Ass.pdf",
+                  "path": "data/data/doc_Crismani_Ita_Ass.pdf",
+                  "parent": "data/data",
+                  "isDir": false,
+                  "hidden": false
+                }
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 462.9880084465351,
+            "y": 296.4351210872846
+          },
+          "__class__": "Node"
+        },
+        {
+          "id": "b3028114-ff75-4e99-bb88-6fbd451a2019",
+          "position": {
+            "x": 776.2168845501044,
+            "y": 242.90018675723235
+          },
+          "type": "custom",
+          "dragHandle": "#nodeHandle",
+          "sourcePosition": "right",
+          "targetPosition": "left",
+          "width": 150,
+          "height": 56,
+          "selected": false,
+          "dragging": false,
+          "data": {
+            "name": "Segmenter",
+            "events": null,
+            "description": "",
+            "inputs": [
+              {
+                "id": "Segment",
+                "label": "Segment",
+                "service": "loko/segmenter/segment",
+                "to": "Segment"
+              },
+              {
+                "id": "Search Box",
+                "label": "Search Box",
+                "service": "loko/segmenter/search_box",
+                "to": "Search Box"
+              }
+            ],
+            "outputs": [
+              {
+                "id": "Segment",
+                "label": "Segment"
+              },
+              {
+                "id": "Search Box",
+                "label": "Search Box"
+              }
+            ],
+            "configured": true,
+            "options": {
+              "group": null,
+              "args": [
+                {
+                  "name": "comment",
+                  "type": "area",
+                  "label": "Node comment",
+                  "helper": "Use it to explain the usage of this node"
+                },
+                {
+                  "name": "alias",
+                  "type": "text",
+                  "label": "Name",
+                  "helper": "Use this name as an alias"
+                },
+                {
+                  "name": "debug",
+                  "type": "boolean",
+                  "label": "Debug to Console",
+                  "divider": true
+                },
+                {
+                  "name": "save_images",
+                  "type": "boolean",
+                  "label": "Save Images",
+                  "helper": "",
+                  "group": "",
+                  "value": null,
+                  "description": ""
+                },
+                {
+                  "name": "dpi",
+                  "type": "number",
+                  "label": "DPI",
+                  "helper": "Set dpi level --- Recommended range: 150-200",
+                  "group": "Segment",
+                  "value": 200,
+                  "description": "Set DPI level to decide on what level of scale to make the segmenter work --- Recommended range: 150-200"
+                },
+                {
+                  "name": "range_kernel_size",
+                  "type": "text",
+                  "label": "Kernel Size Dilation",
+                  "helper": "Set tuple of kernel for logic of dilation (only odd numbers).  Example: 5,5 or 7,5 or 9,7...",
+                  "group": "Segment",
+                  "value": "5,5",
+                  "description": "The expansion width is set with the first element of the tuple. With the second element you set the height of the expansion"
+                },
+                {
+                  "name": "dilate_iteration",
+                  "type": "number",
+                  "label": "Dilate iteration",
+                  "helper": "Set number of iteration for dilate content in document",
+                  "group": "Segment",
+                  "value": 10,
+                  "description": "Set number of iteration for dilate content in document"
+                },
+                {
+                  "name": "range_blocks_height",
+                  "type": "text",
+                  "label": "Range of block height sizes",
+                  "helper": "Sets the minimum and maximum height of the blocks that must be returned in output (set 0 for any measurement)",
+                  "group": "Segment",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum height of the blocks that must be returned in output"
+                },
+                {
+                  "name": "range_blocks_width",
+                  "type": "text",
+                  "label": "Range of block width sizes",
+                  "helper": "Sets the minimum and maximum width of the blocks that must be returned in output (set 0 for any measurement)",
+                  "group": "Segment",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum width of the blocks that must be returned in output"
+                },
+                {
+                  "name": "range_blocks_area",
+                  "type": "text",
+                  "label": "Range of block area sizes",
+                  "helper": "Sets the minimum and maximum area of the blocks that must be returned in output (set 0 for any measurement)",
+                  "group": "Segment",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum area of the blocks that must be returned in output"
+                },
+                {
+                  "name": "range_box_width",
+                  "type": "text",
+                  "label": "Range of boxes width sizes",
+                  "helper": "Sets the minimum and maximum width of the boxes that must be returned in output (set 0 for any measurement)",
+                  "group": "Search Box",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum width of the boxes that must be returned in output"
+                },
+                {
+                  "name": "range_box_height",
+                  "type": "text",
+                  "label": "Range of boxes height sizes",
+                  "helper": "Sets the minimum and maximum height of the boxes that must be returned in output (set 0 for any measurement)",
+                  "group": "Search Box",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum height of the boxes that must be returned in output"
+                },
+                {
+                  "name": "range_box_area",
+                  "type": "text",
+                  "label": "Range of boxes area sizes",
+                  "helper": "Sets the minimum and maximum area of the boxes that must be returned in output (set 0 for any measurement)",
+                  "group": "Search Box",
+                  "value": "0,0",
+                  "description": "Sets the minimum and maximum area of the boxes that must be returned in output"
+                }
+              ],
+              "click": null,
+              "icon": null,
+              "values": {
+                "comment": "",
+                "alias": "",
+                "debug": true,
+                "save_images": true,
+                "dpi": "200",
+                "range_kernel_size": "15,4",
+                "dilate_iteration": "12",
+                "range_blocks_height": "150,0",
+                "range_blocks_width": "150,0",
+                "range_blocks_area": "1000,0",
+                "range_box_width": "0,300",
+                "range_box_height": "0,200",
+                "range_box_area": "2000,0"
+              }
+            },
+            "locked": null
+          },
+          "selectable": true,
+          "draggable": true,
+          "positionAbsolute": {
+            "x": 776.2168845501044,
+            "y": 242.90018675723235
+          },
+          "__class__": "Node"
+        }
+      ],
+      "edges": [
+        {
+          "id": "reactflow__edge-ee7acc40-faf0-48fb-b1ce-008c9692a7fdoutput-b3028114-ff75-4e99-bb88-6fbd451a2019Segment",
+          "source": "ee7acc40-faf0-48fb-b1ce-008c9692a7fd",
+          "sourceHandle": "output",
+          "target": "b3028114-ff75-4e99-bb88-6fbd451a2019",
+          "targetHandle": "Segment",
+          "data": {
+            "startColor": "#F8637A",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        },
+        {
+          "id": "reactflow__edge-de5224d2-e822-48c7-9ed1-d5d0d1c9978coutput-b3028114-ff75-4e99-bb88-6fbd451a2019Search Box",
+          "source": "de5224d2-e822-48c7-9ed1-d5d0d1c9978c",
+          "sourceHandle": "output",
+          "target": "b3028114-ff75-4e99-bb88-6fbd451a2019",
+          "targetHandle": "Search Box",
+          "data": {
+            "startColor": "#F8637A",
+            "stopColor": "#888"
+          },
+          "selected": false,
+          "dragging": false,
+          "__class__": "Edge"
+        }
+      ],
+      "__class__": "Graph"
+    }
+  },
+  "open": [
+    "main"
+  ],
+  "active": "main",
+  "version": "1.0.0",
+  "__class__": "Project"
+}

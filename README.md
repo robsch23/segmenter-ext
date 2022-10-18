@@ -1,6 +1,6 @@
 ## SEGMENTER-EXT
 
-#### The segmenter is an extension for <a href="https://loko-ai.com/" target="_blank">LoKo-AI</a>
+#### The Segmenter is an extension for <a href="https://loko-ai.com/" target="_blank">LoKo-AI</a>
 
 ---
 **_Abstract_**
